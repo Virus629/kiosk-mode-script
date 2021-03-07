@@ -1,0 +1,2 @@
+# Do not commit chrome binary file
+*.msi
