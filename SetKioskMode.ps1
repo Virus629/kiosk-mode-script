@@ -56,6 +56,7 @@ if ($userInput -match "[yY]") {
     Add-User
 
     # Function(s) from "InstallChrome.ps1"
+    Get-ChromePKG
     Install-Chrome
 
     # Functions from "SetRegistryKeys.ps1"

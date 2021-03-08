@@ -1,4 +1,15 @@
+$ProgressPreference = 'SilentlyContinue' # This helps getting better download speed
 $currentDirectory = Get-Location
+
+# Download chrome msi package
+function Get-ChromePKG {
+	Write-Host "[+] INFORM: Downloading Chrome Enterprise binary"
+
+	Invoke-WebRequest -Uri "https://dl.google.com/chrome/install/googlechromestandaloneenterprise64.msi" -OutFile ".\resources\googlechromestandaloneenterprise64.msi"
+
+	Write-Host "[+] SUCCESS: Chrome Enterprise binary downloaded successfully!"
+}
+
 
 # Install Chrome (Enterprise) using msiexec
 function Install-Chrome {
