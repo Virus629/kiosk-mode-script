@@ -43,6 +43,7 @@ Import-Module -Name "$currentDirectory\modules\Get-Config" # Load conbfig module
 . "$currentDirectory\scripts\InstallChrome.ps1"
 . "$currentDirectory\scripts\SetRegistryKeys.ps1"
 . "$currentDirectory\scripts\SetTasks.ps1"
+. "$currentDirectory\scripts\SetPowerSettings.ps1"
 
 # This is MAIN function
 $userInput = Read-Host -Prompt "[+] Do you want to run kiosk mode setup? [yN]"
